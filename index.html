@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche 911</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/jpg" href="Images/Favicon.png"/>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="title">PORSCHE 911</h1>
+            <p class="subtitle">Redefining Timeless Performance</p>
+            <a href="https://www.linkedin.com/in/muhammad-shayan-haider-3781ab2b1/" class="cta-button">Discover More</a>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="thumbnail" onclick="openModal(); currentSlide(1)">
+            <img src="Images/image1.jpg" alt="Image 1">
+        </div>
+        <div class="thumbnail" onclick="openModal(); currentSlide(2)">
+            <img src="Images/image2.jpg" alt="Image 2">
+        </div>
+        <div class="thumbnail" onclick="openModal(); currentSlide(3)">
+            <img src="Images/image3.jpg" alt="Image 3">
+        </div>
+        <div class="thumbnail" onclick="openModal(); currentSlide(4)">
+            <img src="Images/image4.jpg" alt="Image 4">
+        </div>
+        <div class="thumbnail" onclick="openModal(); currentSlide(5)">
+            <img src="Images/image5.jpg" alt="Image 5">
+        </div>
+    </section>
+
+    <!-- Modal Section -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides">
+                <img src="Images/image1.jpg" alt="Image 1">
+            </div>
+            <div class="mySlides">
+                <img src="Images/image2.jpg" alt="Image 2">
+            </div>
+            <div class="mySlides">
+                <img src="Images/image3.jpg" alt="Image 3">
+            </div>
+            <div class="mySlides">
+                <img src="Images/image4.jpg" alt="Image 4">
+            </div>
+            <div class="mySlides">
+                <img src="Images/image5.jpg" alt="Image 5">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br>
+    
+    <footer>
+        <p>&copy; 2025 Shayan Haider. All rights reserved. | <a href="https://www.linkedin.com/in/muhammad-shayan-haider-3781ab2b1/">Privacy Policy</a> | <a href="https://www.linkedin.com/in/muhammad-shayan-haider-3781ab2b1/">Terms of Use</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
